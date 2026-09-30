@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayomikun Steven Seidu | Web & Application Engineer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Ayomikun Steven Seidu — Web & Application Engineer based in Lagos, Nigeria. Building digital products, business platforms, web applications, and scalable mobile experiences that solve real business problems.">
+  <meta name="keywords" content="Ayomikun Steven Seidu, Software Engineer, Web Engineer, Application Engineer, Flutter, React, Angular, JavaScript, Python, Lagos, Nigeria, Corporate Setup, SmallFace Records, Purple Browser">
+  <meta name="author" content="Ayomikun Steven Seidu">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ayomikun Steven Seidu | Web & Application Engineer">
+  <meta property="og:description" content="I build digital products, web platforms and applications that solve real business problems.">
+  <meta property="og:site_name" content="Ayomikun Steven Seidu Portfolio">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="nav" id="navbar">
+    <div class="container container--wide">
+      <div class="nav__inner">
+        <a href="#home" class="nav__logo" aria-label="Steven Seidu Home">
+          STEVEN <span>SEIDU</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Main Navigation">
+          <a href="#home" class="nav__link active">Home</a>
+          <a href="#work" class="nav__link">Work</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#capabilities" class="nav__link">What I Build</a>
+          <a href="#expertise" class="nav__link">Expertise</a>
+          <a href="#experience" class="nav__link">Experience</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+
+        <div class="nav__actions">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Color Theme" title="Toggle theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21.64 13a1 1 0 0 0-1.05-.14 8.05 8.05 0 0 1-3.37.73A8.15 8.15 0 0 1 9.08 5.49a8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27A10.15 10.15 0 0 0 17.22 15.63a9.79 9.79 0 0 0 2.52-.32 8.14 8.14 0 0 1-7.6 4.38z"/>
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 7a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm0-10a1 1 0 0 0 1-1V2a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1zm0 14a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1zm8-8a1 1 0 0 0-1 1 1 1 0 0 0 1 1h2a1 1 0 0 0 0-2zm-16 0a1 1 0 0 0-1-1H2a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1zm13.66-6.34a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41-1.41zM5.76 16.83a1 1 0 0 0-1.42 0l-1.41 1.41a1 1 0 0 0 1.41 1.41l1.42-1.41a1 1 0 0 0 0-1.41zm12.5 1.41a1 1 0 0 0 1.41-1.41l-1.41-1.42a1 1 0 1 0-1.41 1.41zm-12.5-12.5a1 1 0 0 0 0 1.42l1.41 1.41a1 1 0 0 0 1.41-1.41L7.17 5.74a1 1 0 0 0-1.41 0z"/>
+            </svg>
+          </button>
+
+          <a href="#contact" class="btn btn--nav">Let's Work Together</a>
+
+          <!-- Hamburger Button -->
+          <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="nav__mobile" id="nav-mobile" aria-hidden="true">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#capabilities" class="nav__link">What I Build</a>
+      <a href="#expertise" class="nav__link">Expertise</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#contact" class="nav__link">Contact</a>
+      <a href="#contact" class="btn btn--primary" style="margin-top: 16px;">Let's Work Together</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="dot"></span>
+            <span>Available for selected projects &amp; engineering roles</span>
+          </div>
+
+          <p class="hero__name">Ayomikun Steven Seidu • Web &amp; Application Engineer</p>
+
+          <h1 class="heading-xl hero__title">
+            I BUILD DIGITAL PRODUCTS THAT <span class="accent">MOVE BUSINESSES FORWARD.</span>
+          </h1>
+
+          <p class="body-lg hero__description">
+            Web platforms, applications and digital experiences engineered with purpose, performance and scalability in mind. Transforming complex requirements into reliable, intuitive products.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#work" class="btn btn--primary" id="hero-work-btn">
+              <span>View My Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn--secondary" id="hero-contact-btn">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <div class="hero__scroll">
+            <div class="hero__scroll-line"></div>
+            <span>Scroll to explore</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED WORK ==================== -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">
+            <span class="label">Featured Portfolio</span>
+          </div>
+          <h2 class="heading-lg section__title">Selected Work &amp; Case Studies</h2>
+          <p class="body-lg section__subtitle">
+            A curated showcase of production web platforms, applications, and digital products engineered for businesses, education, and entertainment.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Corporate Setup (Full-width / Large Featured Card) -->
+          <article class="project-card project-card--featured reveal" data-project="corporate-setup">
+            <div class="project-card__visual">
+              <img src="assets/images/corporate-setup.png" alt="Corporate Setup Business Platform" class="project-card__img" loading="lazy">
+              <div class="project-card__overlay">
+                <span class="btn btn--primary" style="padding: 10px 20px; font-size: 0.75rem;">View Interactive Case Study</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__category">Business Platform</span>
+              <h3 class="project-card__title">Corporate Setup</h3>
+              <p class="project-card__desc">
+                A centralized, business-focused digital platform architected around comprehensive corporate operations. Manages service requests, contract administration, compliance documentation, and bid/tender management in a unified digital workflow.
+              </p>
+              <div class="project-card__tech">
+                <span class="tech-tag">Web Platform</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">Web Operations</span>
+                <span class="tech-tag">Testing &amp; QA</span>
+              </div>
+              <div class="project-card__actions">
+                <button class="btn btn--ghost" data-case-study="corporate-setup" type="button">Read Case Study</button>
+                <a href="https://www.corporate-setup.app/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="padding: 8px 16px; font-size: 0.75rem;">
+                  Live Platform ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projects 2 & 3: SmallFace Records & Evoke360 (Side-by-Side) -->
+          <div class="projects-row">
+            <!-- Project 2: SmallFace Records -->
+            <article class="project-card reveal reveal-delay-1" data-project="smallface-records">
+              <div class="project-card__visual">
+                <img src="assets/images/smallface-records.png" alt="SmallFace Records Website" class="project-card__img" loading="lazy">
+                <div class="project-card__overlay">
+                  <span class="btn btn--primary" style="padding: 8px 16px; font-size: 0.75rem;">Case Study</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__category">Music Ecosystem &amp; Media</span>
+                <h3 class="project-card__title">SmallFace Records</h3>
+                <p class="project-card__desc">
+                  Digital home for an active record label, integrating artist portfolios, release catalog management, media content distribution, and interactive fan engagement.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Web Management</span>
+                  <span class="tech-tag">CMS Architecture</span>
+                  <span class="tech-tag">Content Ecosystem</span>
+                </div>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" data-case-study="smallface-records" type="button">Read Case Study</button>
+                  <a href="https://smallfacerecords.com/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="padding: 8px 16px; font-size: 0.75rem;">
+                    Live Site ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Evoke360 -->
+            <article class="project-card reveal reveal-delay-2" data-project="evoke360">
+              <div class="project-card__visual">
+                <img src="assets/images/evoke360.png" alt="Evoke360 Digital Platform" class="project-card__img" loading="lazy">
+                <div class="project-card__overlay">
+                  <span class="btn btn--primary" style="padding: 8px 16px; font-size: 0.75rem;">Case Study</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__category">Corporate Digital Platform</span>
+                <h3 class="project-card__title">Evoke360</h3>
+                <p class="project-card__desc">
+                  High-performance web presence engineered with precision typography, responsive fluid layouts, and clear conversion pathways for a dynamic corporate brand.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">CSS3 Architecture</span>
+                  <span class="tech-tag">UI/UX Optimization</span>
+                </div>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" data-case-study="evoke360" type="button">Read Case Study</button>
+                  <a href="https://evoke360.ng/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="padding: 8px 16px; font-size: 0.75rem;">
+                    Live Site ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Featured Showcase: Purple Browser (Distinctive Specialized Card) -->
+          <article class="project-feature reveal">
+            <div class="project-feature__glow" aria-hidden="true"></div>
+            <div class="project-feature__content">
+              <span class="project-feature__badge">Featured Application • Concept &amp; Engine</span>
+              <h3 class="project-feature__title">Purple Browser — A Safer Browsing Experience</h3>
+              <p class="project-feature__desc">
+                A purpose-built, Flutter-powered mobile browsing environment engineered specifically for safety and control. Features deep SafeSearch enforcement, intelligent content filtering rules, customizable access boundaries, and child-safe web navigation.
+              </p>
+              <div class="project-card__tech" style="margin-bottom: 28px;">
+                <span class="tech-tag" style="border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">Flutter</span>
+                <span class="tech-tag" style="border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">Dart</span>
+                <span class="tech-tag" style="border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">WebView</span>
+                <span class="tech-tag" style="border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">SafeSearch Engine</span>
+                <span class="tech-tag" style="border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">MongoDB</span>
+              </div>
+              <div class="project-card__actions">
+                <span class="btn btn--primary" style="background: #7c3aed; box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);">
+                  Mobile Application Engine
+                </span>
+              </div>
+            </div>
+            <div class="project-feature__mockup">
+              <div class="mockup__bar">
+                <div class="mockup__dots">
+                  <div class="mockup__dot"></div>
+                  <div class="mockup__dot"></div>
+                  <div class="mockup__dot"></div>
+                </div>
+                <div class="mockup__url">https://purple-safe-engine.internal/filter-active</div>
+              </div>
+              <div class="mockup__content">
+                <div class="mockup__shield">🛡️</div>
+                <div class="mockup__text">Safe Browsing Mode Active</div>
+                <div class="mockup__sub">SafeSearch Enforced • Web Guard Enabled</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projects 4, 5 & 6: PDO Coders, Trenur, ChefBid -->
+          <div class="projects-row">
+            <!-- Project 4: PDO Coders -->
+            <article class="project-card reveal reveal-delay-1" data-project="procoders">
+              <div class="project-card__visual">
+                <img src="assets/images/procoders.png" alt="PDO Coders Education Platform" class="project-card__img" loading="lazy">
+                <div class="project-card__overlay">
+                  <span class="btn btn--primary" style="padding: 8px 16px; font-size: 0.75rem;">Case Study</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__category">EdTech &amp; Learning Platform</span>
+                <h3 class="project-card__title">PDO Coders</h3>
+                <p class="project-card__desc">
+                  An education and digital training hub structured to empower upcoming software engineers through structured learning tracks, code sandboxes, and instructional development.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Education Platform</span>
+                  <span class="tech-tag">Instructional Tech</span>
+                  <span class="tech-tag">Curriculum Design</span>
+                </div>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" data-case-study="procoders" type="button">Read Case Study</button>
+                  <a href="https://procoders.ng/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="padding: 8px 16px; font-size: 0.75rem;">
+                    Live Platform ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5: Trenur -->
+            <article class="project-card reveal reveal-delay-2" data-project="trenur">
+              <div class="project-card__visual">
+                <img src="assets/images/trenur.png" alt="Trenur Digital Platform" class="project-card__img" loading="lazy">
+                <div class="project-card__overlay">
+                  <span class="btn btn--primary" style="padding: 8px 16px; font-size: 0.75rem;">Case Study</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__category">Digital Product</span>
+                <h3 class="project-card__title">Trenur</h3>
+                <p class="project-card__desc">
+                  Modern digital product implementation emphasizing visual clarity, swift asset loading, and engaging user pathways tailored for the brand's online growth.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Web Development</span>
+                  <span class="tech-tag">Frontend Design</span>
+                  <span class="tech-tag">Performance</span>
+                </div>
+                <div class="project-card__actions">
+                  <button class="btn btn--ghost" data-case-study="trenur" type="button">Read Case Study</button>
+                  <a href="https://trenur.com/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="padding: 8px 16px; font-size: 0.75rem;">
+                    Live Project ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 6: ChefBid -->
+          <article class="project-card project-card--featured reveal" data-project="chefbid">
+            <div class="project-card__visual">
+              <img src="assets/images/chefbid.jpg" alt="ChefBid Culinary Marketplace Platform" class="project-card__img" loading="lazy">
+              <div class="project-card__overlay">
+                <span class="btn btn--primary" style="padding: 10px 20px; font-size: 0.75rem;">Explore Case Study</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project-card__category">Digital Marketplace / Platform</span>
+              <h3 class="project-card__title">ChefBid</h3>
+              <p class="project-card__desc">
+                A specialized digital product and platform engineered to connect culinary talent and clients through an interactive bidding and service management workflow. Crafted with a focus on ease of use, responsive device handling, and transparent user interactions.
+              </p>
+              <div class="project-card__tech">
+                <span class="tech-tag">Platform Engineering</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive UI</span>
+                <span class="tech-tag">Product Workflow</span>
+              </div>
+              <div class="project-card__actions">
+                <button class="btn btn--primary" data-case-study="chefbid" type="button" style="padding: 10px 20px; font-size: 0.75rem;">
+                  Explore Case Study
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT / PROFESSIONAL PROFILE ==================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <div class="section__label">
+              <span class="label">Engineering Profile</span>
+            </div>
+            <h2 class="heading-lg" style="margin-bottom: 24px;">
+              ENGINEERING IDEAS INTO DIGITAL PRODUCTS.
+            </h2>
+            <p class="body-lg">
+              I am Ayomikun Steven Seidu, a Web &amp; Application Engineer based in Lagos, Nigeria. I specialize in bridging the gap between business objectives and technical execution.
+            </p>
+            <p class="body-md">
+              Whether building full-scale business operations portals, cross-platform mobile tools, or scalable API backends, I bring an engineering mindset focused on clean architecture, performance, usability, and maintainability.
+            </p>
+            <p class="body-md" style="margin-top: 16px;">
+              I operate across both frontend and backend environments—translating complex product roadmaps into real, deployable code that drives measurable business outcomes.
+            </p>
+
+            <div class="about__stats">
+              <div class="stat-card">
+                <div class="stat-card__number" data-count="5" data-suffix="+">5+</div>
+                <div class="stat-card__label">Production Platforms &amp; Apps</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__number" data-count="100" data-suffix="%">100%</div>
+                <div class="stat-card__label">Engineering Commitment</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__visual reveal reveal-delay-2">
+            <div class="about__card">
+              <h3 class="about__card-title">Core Technology Stack</h3>
+              <div class="about__tech-list">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">Python / Flask</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Google Cloud</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">Web3</span>
+              </div>
+
+              <div class="about__capabilities">
+                <h4 class="about__card-title" style="margin-top: 24px;">What This Stack Enables Me to Build</h4>
+                <ul>
+                  <li>End-to-end corporate platforms and operational portals</li>
+                  <li>Performant cross-platform mobile apps for iOS &amp; Android</li>
+                  <li>Secure REST APIs, database schemas, and cloud integrations</li>
+                  <li>High-conversion, modern web applications and dashboards</li>
+                  <li>Content management systems and custom web tools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHAT I BUILD ==================== -->
+    <section class="section services" id="capabilities">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">
+            <span class="label">Core Capabilities</span>
+          </div>
+          <h2 class="heading-lg section__title">What I Build</h2>
+          <p class="body-lg section__subtitle">
+            Comprehensive engineering services designed to take your digital products from initial concept to scalable deployment.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- 01 -->
+          <div class="service-card reveal">
+            <div class="service-card__number">01</div>
+            <h3 class="service-card__title">WEB APPLICATIONS</h3>
+            <p class="service-card__desc">
+              Modern, responsive web applications engineered around real business requirements, intuitive user interactions, and lightning-fast load times.
+            </p>
+          </div>
+
+          <!-- 02 -->
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card__number">02</div>
+            <h3 class="service-card__title">MOBILE APPLICATIONS</h3>
+            <p class="service-card__desc">
+              Cross-platform applications and digital products crafted using Flutter &amp; modern tooling, delivering smooth native performance on both Android &amp; iOS.
+            </p>
+          </div>
+
+          <!-- 03 -->
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card__number">03</div>
+            <h3 class="service-card__title">BUSINESS PLATFORMS</h3>
+            <p class="service-card__desc">
+              Custom operations platforms that streamline internal workflows, document approvals, contract workflows, and client service requests into unified dashboards.
+            </p>
+          </div>
+
+          <!-- 04 -->
+          <div class="service-card reveal">
+            <div class="service-card__number">04</div>
+            <h3 class="service-card__title">E-COMMERCE</h3>
+            <p class="service-card__desc">
+              Digital commerce experiences designed for usability, frictionless checkout, real-time inventory synchronization, and maximum conversion rates.
+            </p>
+          </div>
+
+          <!-- 05 -->
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card__number">05</div>
+            <h3 class="service-card__title">API &amp; BACKEND SYSTEMS</h3>
+            <p class="service-card__desc">
+              Robust RESTful APIs, relational &amp; NoSQL database architectures, cloud services, and server integrations supporting scalable applications.
+            </p>
+          </div>
+
+          <!-- 06 -->
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card__number">06</div>
+            <h3 class="service-card__title">DIGITAL EXPERIENCES</h3>
+            <p class="service-card__desc">
+              Professional brand websites and interactive digital interfaces that clearly communicate value propositions and captivate target audiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL EXPERTISE ==================== -->
+    <section class="section expertise" id="expertise">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">
+            <span class="label">Skills Matrix</span>
+          </div>
+          <h2 class="heading-lg section__title">Technical Expertise</h2>
+          <p class="body-lg section__subtitle">
+            An overview of the programming languages, frameworks, databases, and development tooling I utilize to engineer reliable digital solutions.
+          </p>
+        </div>
+
+        <div class="expertise__grid">
+          <!-- Frontend -->
+          <div class="expertise-card reveal">
+            <h3 class="expertise-card__title">Frontend Development</h3>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">HTML5</span>
+              <span class="expertise-tag">CSS3 / SCSS</span>
+              <span class="expertise-tag">JavaScript (ES6+)</span>
+              <span class="expertise-tag">TypeScript</span>
+              <span class="expertise-tag">React</span>
+              <span class="expertise-tag">Angular</span>
+            </div>
+          </div>
+
+          <!-- Mobile -->
+          <div class="expertise-card reveal reveal-delay-1">
+            <h3 class="expertise-card__title">Mobile Engineering</h3>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">Flutter</span>
+              <span class="expertise-tag">Dart</span>
+              <span class="expertise-tag">Cross-Platform iOS/Android</span>
+              <span class="expertise-tag">WebView Integration</span>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="expertise-card reveal reveal-delay-2">
+            <h3 class="expertise-card__title">Backend &amp; APIs</h3>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">Python (Flask)</span>
+              <span class="expertise-tag">Java</span>
+              <span class="expertise-tag">RESTful APIs</span>
+              <span class="expertise-tag">API Integration</span>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="expertise-card reveal">
+            <h3 class="expertise-card__title">Database Systems</h3>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">SQL</span>
+              <span class="expertise-tag">MongoDB</span>
+              <span class="expertise-tag">Firebase Firestore</span>
+              <span class="expertise-tag">Realtime DB</span>
+            </div>
+          </div>
+
+          <!-- Cloud & Services -->
+          <div class="expertise-card reveal reveal-delay-1">
+            <h3 class="expertise-card__title">Cloud &amp; Services</h3>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">Google Cloud</span>
+              <span class="expertise-tag">Firebase Auth &amp; Hosting</span>
+              <span class="expertise-tag">Cloud Storage</span>
+            </div>
+          </div>
+
+          <!-- CMS & Other -->
+          <div class="expertise-card reveal reveal-delay-2">
+            <h3 class="expertise-card__title">CMS &amp; Tooling</h3>
+            <div class="expertise-card__tags">
+              <span class="expertise-tag">WordPress</span>
+              <span class="expertise-tag">Git / GitHub</span>
+              <span class="expertise-tag">Responsive Design</span>
+              <span class="expertise-tag">Web3 Basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MORE FROM THE LAB ==================== -->
+    <section class="section lab" id="lab">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">
+            <span class="label">Engineering Lab &amp; Concepts</span>
+          </div>
+          <h2 class="heading-lg section__title">More from the Lab</h2>
+          <p class="body-lg section__subtitle">
+            Additional engineering builds demonstrating dashboard development, algorithmic tools, and specialized mobile apps.
+          </p>
+        </div>
+
+        <div class="lab-grid">
+          <!-- Lab 1: Flutter E-Commerce Application -->
+          <div class="lab-card reveal">
+            <div class="lab-card__icon">🛍️</div>
+            <h3 class="lab-card__title">Flutter E-Commerce Application</h3>
+            <p class="lab-card__desc">
+              A comprehensive mobile commerce application designed around baby-care product purchasing, featuring catalog browsing, cart management, user authentication, and Firebase backend synchronization.
+            </p>
+            <div class="lab-card__tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Mobile UX</span>
+            </div>
+          </div>
+
+          <!-- Lab 2: Crypto Trading Web Bot -->
+          <div class="lab-card reveal reveal-delay-1">
+            <div class="lab-card__icon">🤖</div>
+            <h3 class="lab-card__title">Crypto Trading Web Bot</h3>
+            <p class="lab-card__desc">
+              A Python &amp; Flask-based web bot developed for crypto market monitoring and automated trade execution workflows, integrating financial APIs and event-driven status updates.
+            </p>
+            <div class="lab-card__tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">Automation</span>
+            </div>
+          </div>
+
+          <!-- Lab 3: Lendsqr Frontend Assessment Dashboard -->
+          <div class="lab-card reveal reveal-delay-2">
+            <div class="lab-card__icon">📊</div>
+            <h3 class="lab-card__title">Lendsqr Frontend Dashboard</h3>
+            <p class="lab-card__desc">
+              An enterprise dashboard application featuring authentication, granular user management, interactive user details, data table filtering, pagination, local storage persistence, and data visualization.
+            </p>
+            <div class="lab-card__tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">SCSS</span>
+              <span class="tech-tag">State Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">
+            <span class="label">Career History</span>
+          </div>
+          <h2 class="heading-lg section__title">Professional Experience</h2>
+          <p class="body-lg section__subtitle">
+            My track record in software engineering, technical management, digital operations, and instructional leadership.
+          </p>
+        </div>
+
+        <div class="timeline reveal">
+          <!-- Experience 1 -->
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">Software Development Executive</h3>
+              <span class="timeline__company">Corporate Setup</span>
+              <span class="timeline__date">2024 — Present</span>
+            </div>
+            <p class="timeline__desc">
+              Directing software development operations and web platform management for business-critical client portals. Overseeing WordPress architecture, JavaScript functionality, comprehensive software QA testing, analytics data evaluation, and continuous platform usability enhancements.
+            </p>
+            <div class="timeline__tags">
+              <span class="tech-tag">Software Management</span>
+              <span class="tech-tag">Web Operations</span>
+              <span class="tech-tag">WordPress</span>
+              <span class="tech-tag">QA &amp; Testing</span>
+              <span class="tech-tag">Performance Monitoring</span>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">Web Manager</h3>
+              <span class="timeline__company">SmallFace Records</span>
+              <span class="timeline__date">2022 — Present</span>
+            </div>
+            <p class="timeline__desc">
+              Managing the digital presence, content distribution systems, and website ecosystem for an active entertainment label. Responsible for site maintenance, artist portfolio integrations, digital release updates, and audience engagement platforms.
+            </p>
+            <div class="timeline__tags">
+              <span class="tech-tag">Web Management</span>
+              <span class="tech-tag">Digital Platforms</span>
+              <span class="tech-tag">CMS Architecture</span>
+              <span class="tech-tag">Content Ecosystem</span>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__header">
+              <h3 class="timeline__role">Software Instructor</h3>
+              <span class="timeline__company">PDO Coders</span>
+              <span class="timeline__date">Software Education</span>
+            </div>
+            <p class="timeline__desc">
+              Instructed aspiring developers in core programming principles, web technologies, and practical software engineering. Designed hands-on curriculum, conducted technical code reviews, and mentored students through building real-world digital applications.
+            </p>
+            <div class="timeline__tags">
+              <span class="tech-tag">Software Instruction</span>
+              <span class="tech-tag">Technical Mentorship</span>
+              <span class="tech-tag">Curriculum Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DEVELOPMENT PHILOSOPHY ==================== -->
+    <section class="section philosophy" id="philosophy">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">
+            <span class="label">Engineering Mindset</span>
+          </div>
+          <h2 class="heading-lg section__title">How I Approach Building</h2>
+          <p class="body-lg section__subtitle">
+            A disciplined four-step methodology to ensure every product solves real problems and scales seamlessly.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          <!-- Step 1 -->
+          <div class="philosophy-card reveal">
+            <div class="philosophy-card__step">01</div>
+            <h3 class="philosophy-card__title">UNDERSTAND</h3>
+            <p class="philosophy-card__desc">
+              Understand the business, users and problem before writing code. Identify constraints, target metrics, and real requirements.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="philosophy-card reveal reveal-delay-1">
+            <div class="philosophy-card__step">02</div>
+            <h3 class="philosophy-card__title">DESIGN</h3>
+            <p class="philosophy-card__desc">
+              Create interfaces that are clear, purposeful and intuitive. Build visual hierarchies that guide user actions naturally.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="philosophy-card reveal reveal-delay-2">
+            <div class="philosophy-card__step">03</div>
+            <h3 class="philosophy-card__title">ENGINEER</h3>
+            <p class="philosophy-card__desc">
+              Build reliable, maintainable and scalable software. Write clean code with strong typing, robust error handling, and modular structure.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="philosophy-card reveal reveal-delay-3">
+            <div class="philosophy-card__step">04</div>
+            <h3 class="philosophy-card__title">IMPROVE</h3>
+            <p class="philosophy-card__desc">
+              Test, measure and continuously improve the product. Monitor performance, listen to user data, and optimize iteratively.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PERSONAL STATEMENT ==================== -->
+    <section class="statement" id="statement">
+      <div class="container">
+        <blockquote class="statement__text reveal">
+          "I don't just write code. I turn ideas, requirements and business problems into <span class="accent">usable digital products.</span>"
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT / CTA ==================== -->
+    <section class="section contact" id="contact">
+      <div class="contact__bg-orb" aria-hidden="true"></div>
+      <div class="container">
+        <div class="contact__inner reveal">
+          <div class="section__label" style="justify-content: center;">
+            <span class="label">Let's Connect</span>
+          </div>
+          <h2 class="heading-lg contact__title">HAVE AN IDEA WORTH BUILDING?</h2>
+          <p class="body-lg contact__subtitle">
+            Let's turn the idea into something real. Available for contract roles, full-time engineering positions, and high-impact digital projects.
+          </p>
+
+          <div class="contact__cta">
+            <a href="mailto:ayomikunseidu@gmail.com" class="btn btn--primary" id="contact-email-btn">
+              <span>Start a Conversation</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#work" class="btn btn--secondary">
+              <span>View My Work</span>
+            </a>
+          </div>
+
+          <div class="contact__info">
+            <div class="contact__item">
+              <div class="contact__item-label">Direct Email</div>
+              <div class="contact__item-value">
+                <a href="mailto:ayomikunseidu@gmail.com">ayomikunseidu@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-label">Location</div>
+              <div class="contact__item-value">Lagos, Nigeria</div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-label">Professional Focus</div>
+              <div class="contact__item-value">Web &amp; Application Engineering</div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="contact__socials" aria-label="Professional Social Links">
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:ayomikunseidu@gmail.com" class="social-link" title="Send Email" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container container--wide">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          &copy; <span id="year">2026</span> Ayomikun Steven Seidu. All rights reserved. Engineered with Vanilla HTML, CSS &amp; JS.
+        </p>
+        <div class="footer__links">
+          <a href="#home" class="footer__link">Back to Top ↑</a>
+          <a href="#work" class="footer__link">Selected Work</a>
+          <a href="#about" class="footer__link">About Profile</a>
+          <a href="mailto:ayomikunseidu@gmail.com" class="footer__link">Direct Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to Top">
+    <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <!-- ==================== INTERACTIVE CASE STUDY MODAL ==================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal__header">
+        <div>
+          <div class="modal__category">Project Category</div>
+          <h2 class="modal__title">Project Title</h2>
+        </div>
+        <button class="modal__close" aria-label="Close Case Study" title="Close modal">&times;</button>
+      </div>
+      <div class="modal__body">
+        <!-- Challenge -->
+        <div class="modal__section">
+          <h3 class="modal__section-title">The Challenge</h3>
+          <p class="modal__section-text"></p>
+        </div>
+
+        <!-- Solution -->
+        <div class="modal__section">
+          <h3 class="modal__section-title">The Solution</h3>
+          <p class="modal__section-text"></p>
+        </div>
+
+        <!-- Role -->
+        <div class="modal__section">
+          <h3 class="modal__section-title">My Role</h3>
+          <p class="modal__section-text"></p>
+        </div>
+
+        <!-- Technology -->
+        <div class="modal__section">
+          <h3 class="modal__section-title">Technology</h3>
+          <div class="modal__tech-tags"></div>
+        </div>
+
+        <!-- Outcome -->
+        <div class="modal__section">
+          <h3 class="modal__section-title">Outcome</h3>
+          <p class="modal__section-text"></p>
+        </div>
+
+        <!-- Live Link -->
+        <a href="#" target="_blank" rel="noopener noreferrer" class="modal__link">
+          Visit Live Platform / Project ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>

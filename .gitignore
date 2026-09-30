@@ -1,0 +1,13 @@
+# Dependencies & OS files
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Python cache / scripts
+__pycache__/
+*.pyc
+capture_screenshots.py
+
+# Local editor settings
+.vscode/
+.idea/
